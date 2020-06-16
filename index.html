@@ -1,12 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
-
+	<title>test page</title>
 </head>
 <body>
 
-	<form>
-		<input type="text" name="name" placeholder="Enter your  name">
-		<input type="submit" name="submit">
-	</form>
+<span id="cmd">Forward</span>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDmGWjqH4CTRMggYeTv8raQrPzM7_YK9bQ",
+    authDomain: "arduino-web-controller-fa175.firebaseapp.com",
+    databaseURL: "https://arduino-web-controller-fa175.firebaseio.com",
+    projectId: "arduino-web-controller-fa175",
+    storageBucket: "arduino-web-controller-fa175.appspot.com",
+    messagingSenderId: "691803136012",
+    appId: "1:691803136012:web:1dc028f80ea7531cb88e29"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
